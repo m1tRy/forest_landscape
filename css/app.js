@@ -4,7 +4,6 @@ $(function() {
       introH = 1,
       scrollOffset = $(window).scrollTop();
 
-
   /*header*/
     checkScroll(scrollOffset);
 
@@ -15,14 +14,17 @@ $(function() {
   });
 
   function checkScroll(scrollOffset) {
-    if( scrollOffset >= introH) {
-      header.addClass("fixed");
+    if( scrollOffset >= introH && innerWidth >= 1050) {
+      header.addClass("fixed"),
+      document.body.style.marginTop = '120px';
 
-
-    } else {
-      header.removeClass("fixed");
-
-
+    } else if ( scrollOffset >= introH && innerWidth < 1049){
+      header.addClass("fixed"),
+      document.body.style.marginTop = '0',
+      document.body.style.marginTop = '73px';
+    } else{
+      header.removeClass("fixed"),
+      document.body.style.marginTop = '0';
     }
   }
 
