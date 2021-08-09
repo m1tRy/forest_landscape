@@ -1,7 +1,7 @@
 $(function() {
 
   var header = $("#header"),
-      introH = $("#intro").innerHeight(),
+      introH = 1,
       scrollOffset = $(window).scrollTop();
 
 
@@ -16,17 +16,22 @@ $(function() {
 
   function checkScroll(scrollOffset) {
     if( scrollOffset >= introH) {
-      header.addClass("fixed"),
-      logo.classList.add('active');
+      header.addClass("fixed");
 
 
     } else {
-      header.removeClass("fixed"),
-      logo.classList.remove('active');
+      header.removeClass("fixed");
 
 
     }
   }
+
+  $("#nav_toggle").on("click", function(event) {
+      event.preventDefault();
+
+      $(this).toggleClass("active");
+      $("#nav").toggleClass("active");
+  });
 
 /* culc*/
 let coll = document.getElementsByClassName('btnc');
