@@ -174,10 +174,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* heder */
 .logo{
-  z-index: 100
+  z-index: 100;
+
 
 }
+.header.fixed .logo{
+  width: 120px;
 
+}
 
 .header.fixed {
 
@@ -189,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     right: 0;
-
+    max-height: 100px;
     transform: translate3d(0, 0, 0);
     z-index: 101
 }
@@ -1705,6 +1709,10 @@ margin-left: -83px;
   .logo {
     width: 100px;
   }
+  .header.fixed .logo{
+    width: 100px;
+    margin-left: 0px;
+  }
 
   .header__inner {
     max-height: 73px;
@@ -1985,6 +1993,7 @@ h3{
     left: 0;
     top: 0;
     position: absolute;
+    box-shadow: 0px 4px 24px 0px #25242478;
 }
   .nav-toggle {
       display: block;
@@ -2295,7 +2304,15 @@ h1{
     display: none;
   }
 }
+@media (max-width: 573px) {
+  .first--section {
+    padding-top: 617px;
+}
+}
 @media (max-width: 500px) {
+  .first--section {
+    padding-top: 617px;
+}
   .sim-slider2 {
     top: -262px;
 }
@@ -2340,6 +2357,9 @@ h1{
 }
 
 @media (max-width: 450px) {
+  .first--section {
+    padding-top: 422px;
+}
   .news {
     padding-right: 8%;
 }
@@ -2464,6 +2484,9 @@ line-height: 36px;
 }
 }
 @media (max-width: 400px){
+  .first--section {
+    padding-top: 627px;
+}
 
   .doc__punct {
     padding-right: 72px;
