@@ -2322,6 +2322,13 @@ line-height: 36px;
 }
 }
 @media (max-width: 400px){
+  .popup__content{
+    transition: none;
+  }
+  .doc__punct {
+    padding-right: 72px;
+    padding-left: 39px;
+}
   .new__item {
     margin: 0px 55px;
 }
@@ -2348,6 +2355,8 @@ line-height: 36px;
 }
   .photos {
     height: 333px;
+    margin-left: 21px;
+
 }
   .sim-slider2 {
     top: -466px;
@@ -2359,7 +2368,7 @@ line-height: 36px;
     display: none;
   }
   .popup__img {
-    width: 32vh;
+    width: 56vh;
     height: auto;
   }
   .infovintro {
@@ -2426,10 +2435,7 @@ font-size: 14px;
 
     left: 115px;
   }
-  .doc__punct {
-    padding-right: 13px;
-    padding-left: 6px;
-}
+
   .doc__punct__title {
     font-size: 16px;
 }
