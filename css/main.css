@@ -75,16 +75,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .section--calc{
   padding-bottom: 180px;
+  padding-top: 126px;
 }
 
 
 .section--promotion{
   padding-bottom: 110px;
+  padding-top: 126px;
 }
 
 
 .section--gen{
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 /* container */
